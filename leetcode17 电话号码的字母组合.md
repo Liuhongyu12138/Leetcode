@@ -2,9 +2,9 @@
 
 给定一个仅包含数字 **2-9** 的字符串，返回所有它能表示的字母组合。
 
-给出数字到字母的映射如下（与电话按键相同）。注意 **1** 不对应任何字母。
+给出数字到字母的映射如下（与电话按键相同）。注意 **1** 不对应任何字母。!
 
-![image-20190914234504015](/Users/liuhongyu/Library/Application Support/typora-user-images/image-20190914234504015.png)
+![Image text](https://github.com/Liuhongyu12138/Leetcode/blob/lhy/image/leetcode17.png)
 
 示例:
 
