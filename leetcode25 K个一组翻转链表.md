@@ -53,11 +53,11 @@ class Solution:
         head.next.next = head
         head.next = None
         return res
-   
-  	def reverse2(self, head):
-  			pre, cur = None, head
+      
+    def reverse2(self, head):
+        pre, cur = None, head
         while cur:
-          	next = cur.next
+            next = cur.next
             cur.next = pre
             pre = cur
             cur = next
