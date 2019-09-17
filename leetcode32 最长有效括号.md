@@ -23,10 +23,10 @@
 简单有效的做法：
 从左往右，从右往左分别扫一遍，left和right分别记录左括号和右括号数量：
 从右往左扫：
-		如果left<right,说明右括号多了，匹配肯定失败。left right 清0
-		如果left==right，说明肯定是之前左括号更多，之前没失败过，所以现在是完美匹配。更新res
-反之类似。反过来扫是为了解决"((()"的情况，如果只从右往左扫，res=0。
-时间o(n), 空间o(1)
+	如果left<right,说明右括号多了，匹配肯定失败。left right 清0
+	如果left==right，说明肯定是之前左括号更多，之前没失败过，所以现在是完美匹配。更新res
+	反之类似。反过来扫是为了解决"((()"的情况，如果只从右往左扫，res=0。
+	时间o(n), 空间o(1)
 """
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
@@ -64,8 +64,8 @@ class Solution:
 
 ~~~python
 """
-括号匹配惯用做法，用栈。如果是（ 进栈，如果是）出栈，用当前下标减去栈顶value就是当前匹配的长度。
-栈初始化的时候放一个-1，如果上来就是），栈还可以弹，如果发现栈空，就把当前的index放入栈中。
+	括号匹配惯用做法，用栈。如果是（ 进栈，如果是）出栈，用当前下标减去栈顶value就是当前匹配的长度。
+	栈初始化的时候放一个-1，如果上来就是），栈还可以弹，如果发现栈空，就把当前的index放入栈中。
 """
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
